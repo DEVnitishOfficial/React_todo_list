@@ -28,6 +28,7 @@ function Todo({ TodoData, isFinished, changeFinished, onDelete, onEdit }) {
         className=" border-indigo-600 border-2 m-2 px-4 bg-slate-600 rounded-sm"
         onClick={() => {
           setIsEditting(!isEditting);
+          console.log('see the changes in isediting',isEditting)
           if (isEditting) {
             onEdit(editText);
           }
