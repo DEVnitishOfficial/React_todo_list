@@ -15,7 +15,7 @@ function AddTodo({ addTodo }) {
       <button
         className="border-indigo-600 border-2 m-2 px-4 bg-slate-600 rounded-sm"
         onClick={() => {
-          addTodo(inputText);
+          addTodo({todoText : inputText});
           setInputText("");
         }}
       >
